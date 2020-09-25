@@ -9,20 +9,8 @@ import org.springframework.test.web.servlet.RequestBuilder;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 
 public class JsonFeedServiceImplTest {
-
-	@Autowired
-	private MockMvc mockMvc;
 	
 	@Test
 	void getAllPostTest(){
-
-		RequestBuilder request = MockMvcRequestBuilders
-				.get("/")
-				.accept(MediaType.APPLICATION_JSON);
-		
-		MvcResult result = mockMvc.perform(request)
-				//.andExpect(status().isOk())
-				//.andExpect(content().string("Hello World"))
-				.andReturn();
 	}
 }
